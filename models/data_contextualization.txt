@@ -1,0 +1,30 @@
+Displacement:
+Variable Type: Continuous
+Meaning: This is the engine displacement of the car, measured in cubic inches (ci). It indicates the total volume of all the cylinders in the engine. A higher displacement generally corresponds to a larger engine size and more power.
+
+Cylinders:
+Variable Type: Discrete/Integer
+Meaning: The number of cylinders in the car's engine. Common values are 4, 6, and 8, with more cylinders typically indicating a more powerful engine.
+
+Horsepower:
+Variable Type: Continuous
+Meaning: This refers to the horsepower (hp) of the car's engine, a measure of the engine's power. Higher horsepower indicates better acceleration and overall performance.
+
+Weight:
+Variable Type: Continuous
+Meaning: The weight of the car, typically measured in pounds (lbs). Heavier cars generally require more power (horsepower) to achieve similar acceleration as lighter cars.
+
+Acceleration:
+Variable Type: Continuous
+Meaning: The time it takes for the car to accelerate from 0 to 60 miles per hour (mph), typically measured in seconds. Lower values represent better acceleration.
+
+Model Year:
+Variable Type: Discrete/Integer
+Meaning: The year the car model was manufactured. This is a categorical variable that can be treated as a discrete feature, and older models may have different performance characteristics due to technological advancements.
+
+Origin:
+Variable Type: Categorical (encoded as integer)
+Meaning: The origin of the car, where it was manufactured.
+1 = USA
+2 = Europe
+3 = Japan

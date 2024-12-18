@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-600">Top 10 MPG Predictions</h2>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <table class="w-full">
+            <thead class="bg-gray-100 border-b">
+                <tr>
+                    <th class="px-6 py-3 text-left">Rank</th>
+                    <th class="px-6 py-3 text-left">Displacement</th>
+                    <th class="px-6 py-3 text-left">Cylinders</th>
+                    <th class="px-6 py-3 text-left">Predicted MPG</th>
+                    <th class="px-6 py-3 text-left">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in leaderboard %}
+                <tr class="hover:bg-gray-50">
+                    <td class="px-6 py-4">{{ loop.index }}</td>
+                    <td class="px-6 py-4">{{ entry.displacement }}</td>
+                    <td class="px-6 py-4">{{ entry.cylinders }}</td>
+                    <td class="px-6 py-4 font-bold text-blue-600">{{ entry.mpg }}</td>
+                    <td class="px-6 py-4">{{ entry.date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

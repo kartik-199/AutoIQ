@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MPG Predictor{% endblock %}</title>
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">MPG Predictor</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="/predict" class="text-gray-600 hover:text-blue-600">Predict</a>
+                    <a href="/leaderboard" class="text-gray-600 hover:text-blue-600">Leaderboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-white py-6 mt-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">&copy; 2024 MPG Predictor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

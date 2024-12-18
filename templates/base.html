@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}MPG Predictor{% endblock %}</title>
+    <title>{% block title %}AutoIQ-19{% endblock %}</title>
     <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -12,7 +12,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">MPG Predictor</a>
+                    <a href="/" class="text-2xl font-bold text-blue-600">AutoIQ-19</a>
                 </div>
                 <div class="flex space-x-4">
                     <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
@@ -26,11 +26,5 @@
     <main class="container mx-auto px-4 py-8">
         {% block content %}{% endblock %}
     </main>
-
-    <footer class="bg-white py-6 mt-8 border-t">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-600">&copy; 2024 MPG Predictor. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>

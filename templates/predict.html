@@ -8,42 +8,42 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block mb-2">Displacement</label>
-                <input type="number" name="displacement" class="input-field" required>
+                <input type="number" name="displacement" class="input-field" value="{{displacement}}" required>
             </div>
             <div>
                 <label class="block mb-2">Cylinders</label>
-                <input type="number" name="cylinders" class="input-field" required>
+                <input type="number" name="cylinders" class="input-field" value="{{cylinders}}" required>
             </div>
         </div>
 
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block mb-2">Horsepower</label>
-                <input type="number" name="horsepower" class="input-field" required>
+                <input type="number" name="horsepower" class="input-field" value="{{horsepower}}" required>
             </div>
             <div>
                 <label class="block mb-2">Weight</label>
-                <input type="number" name="weight" class="input-field" required>
+                <input type="number" name="weight" class="input-field" value="{{weight}}" required>
             </div>
         </div>
 
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block mb-2">Acceleration</label>
-                <input type="number" name="acceleration" step="0.1" class="input-field" required>
+                <input type="number" name="acceleration" step="0.1" class="input-field" value="{{acceleration}}" required>
             </div>
             <div>
                 <label class="block mb-2">Model Year</label>
-                <input type="number" name="model_year" class="input-field" required>
+                <input type="number" name="model_year" class="input-field" value="{{model_year}}" required>
             </div>
         </div>
 
         <div>
             <label class="block mb-2">Origin</label>
             <select name="origin" class="input-field" required>
-                <option value="1">USA</option>
-                <option value="2">Europe</option>
-                <option value="3">Japan</option>
+                <option value="1" {% if origin == 1 %}selected{% endif %}>USA</option>
+                <option value="2" {% if origin == 2 %}selected{% endif %}>Europe</option>
+                <option value="3" {% if origin == 3 %}selected{% endif %}>Japan</option>
             </select>
         </div>
 

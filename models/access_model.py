@@ -49,7 +49,7 @@ def preprocess_input(weight, acceleration, displacement, cylinders, horsepower, 
 
 # Define the function to make predictions
 def get_model_prediction(weight, acceleration, displacement, cylinders, horsepower, model_year, origin):
-    lr_model = joblib.load('multiple_regression_model_mpg_engineered.pkl')
+    lr_model = joblib.load('models/multiple_regression_model_mpg_engineered.pkl')
 
     # Preprocess the input
     preprocessed_input = preprocess_input(weight, acceleration, displacement, cylinders, horsepower, model_year, origin)

@@ -1,5 +1,6 @@
 # AutoIQ
 
+
 This project is a Flask web application that predicts the fuel efficiency (miles per gallon, MPG) of cars based on various features such as weight, acceleration, displacement, and others. The app also tracks and displays a leaderboard of the top predictions made by users.
 
 ## Features
